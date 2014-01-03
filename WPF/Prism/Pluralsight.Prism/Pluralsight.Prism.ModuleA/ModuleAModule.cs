@@ -20,8 +20,8 @@ namespace Pluralsight.Prism.ModuleA
             _regionManager.RegisterViewWithRegion(RegionNames.MenuRegionName, typeof (ViewModuleA));
 
             //Dynamically 
-            //IRegion region = _regionManager.Regions[RegionNames.MenuRegionName];
-            //var ob = ServiceLocator.Current.GetInstance<ViewModuleA>();
+            IRegion region = _regionManager.Regions[RegionNames.MenuRegionName];
+            var ob = ServiceLocator.Current.GetInstance<ViewModuleA>();
         }
 
         [ImportingConstructor]
