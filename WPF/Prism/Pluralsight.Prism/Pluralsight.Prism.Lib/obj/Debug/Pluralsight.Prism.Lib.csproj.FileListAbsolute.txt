@@ -1,0 +1,4 @@
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Lib\bin\Debug\Pluralsight.Prism.Lib.dll
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Lib\bin\Debug\Pluralsight.Prism.Lib.pdb
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Lib\obj\Debug\Pluralsight.Prism.Lib.dll
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Lib\obj\Debug\Pluralsight.Prism.Lib.pdb

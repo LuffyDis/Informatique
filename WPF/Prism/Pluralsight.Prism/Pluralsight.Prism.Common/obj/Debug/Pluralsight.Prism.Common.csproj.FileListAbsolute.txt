@@ -1,0 +1,11 @@
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\bin\Debug\Pluralsight.Prism.Common.dll
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\bin\Debug\Pluralsight.Prism.Common.pdb
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common.csprojResolveAssemblyReference.cache
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common_MarkupCompile.cache
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common_MarkupCompile.lref
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Themes\Generic.baml
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common.g.resources
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common.Properties.Resources.resources
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common.csproj.GenerateResource.Cache
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common.dll
+C:\Ressources\POC\Pluralsight.Prism\Pluralsight.Prism.Common\obj\Debug\Pluralsight.Prism.Common.pdb

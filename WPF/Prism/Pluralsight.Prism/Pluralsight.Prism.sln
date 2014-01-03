@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluralsight.Prism.Desktop", "Pluralsight.Prism.Desktop\Pluralsight.Prism.Desktop.csproj", "{FFA74C34-B649-4E8D-9B7E-3426786FBFDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluralsight.Prism.Lib", "Pluralsight.Prism.Lib\Pluralsight.Prism.Lib.csproj", "{77276C83-6520-4341-B925-EE16F1F2A019}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{93507E56-9F8D-41AD-A23E-FA4C5F647A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluralsight.Prism.Common", "Pluralsight.Prism.Common\Pluralsight.Prism.Common.csproj", "{F92EC752-11C2-4A2A-9C4E-B6B2E3EBD0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluralsight.Prism.ModuleA", "Pluralsight.Prism.ModuleA\Pluralsight.Prism.ModuleA.csproj", "{19940FFB-4A4F-4F6F-8253-F0C94A08B204}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFA74C34-B649-4E8D-9B7E-3426786FBFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA74C34-B649-4E8D-9B7E-3426786FBFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA74C34-B649-4E8D-9B7E-3426786FBFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA74C34-B649-4E8D-9B7E-3426786FBFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77276C83-6520-4341-B925-EE16F1F2A019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77276C83-6520-4341-B925-EE16F1F2A019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77276C83-6520-4341-B925-EE16F1F2A019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77276C83-6520-4341-B925-EE16F1F2A019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92EC752-11C2-4A2A-9C4E-B6B2E3EBD0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92EC752-11C2-4A2A-9C4E-B6B2E3EBD0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92EC752-11C2-4A2A-9C4E-B6B2E3EBD0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92EC752-11C2-4A2A-9C4E-B6B2E3EBD0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19940FFB-4A4F-4F6F-8253-F0C94A08B204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19940FFB-4A4F-4F6F-8253-F0C94A08B204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19940FFB-4A4F-4F6F-8253-F0C94A08B204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19940FFB-4A4F-4F6F-8253-F0C94A08B204}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19940FFB-4A4F-4F6F-8253-F0C94A08B204} = {93507E56-9F8D-41AD-A23E-FA4C5F647A03}
+	EndGlobalSection
+EndGlobal
