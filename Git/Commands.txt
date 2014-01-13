@@ -28,6 +28,7 @@
 	- faire git commit -a pour « commiter » tous les fichiers qui étaient listés dans git status dans les colonnes « Changes to be committed » et « Changed but not updated » (qu’ils soient en vert ou en rouge) ;
 
 	- faire git commit nomfichier1 nomfichier2 pour indiquer lors du commit quels fichiers précis doivent être « commités ».
+	- git add . ajouter tous les fichier dans le commit 
 
 5. Verifier les logs 
 	- git log
