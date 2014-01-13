@@ -1,0 +1,56 @@
+1. Configuration 
+	- git config --global color.diff auto
+	- git config --global color.status auto
+	- git config --global color.branch auto
+	- git config --global user.name "votre_pseudo"
+	- git config --global user.email moi@email.com
+	- vim ~/.gitconfig
+
+2.How to install and confnigure Git
+
+1. Following those steps : http://fr.openclassrooms.com/informatique/cours/gerez-vos-codes-source-avec-git/modifier-le-code-et-effectuer-des-commits
+2. Configure the proxy : 
+- get the proxy server : go to internet explorer , get the script address , open it with the browser , get address
+- git config --global http.proxy http://User:Password@proxy.msnet.railb.be:80
+
+3. Créer un nouveau depot ou cloner un dépot existant 
+	- git init : se mettre dans le dossier 
+	- git clone http://github.com/symfony/symfony.git
+	- git status : La commande git status vous indique les fichiers que vous avez modifiés récemment
+	- git diff : Vous pouvez voir concrètement ce que vous avez changé
+	
+4. Commit des changements 
+	Il faut explicitement préciser les fichiers que vous voulez « commiter ». Pour cela, trois possibilités :
+
+	- faire git add nomfichier1 nomfichier2 pour ajouter les fichiers à la liste de ceux devant faire l’objet d’un commit, puis faire un git commit. 
+	  Si vous faites un git status après un git add, vous les verrez alors en vert ;
+
+	- faire git commit -a pour « commiter » tous les fichiers qui étaient listés dans git status dans les colonnes « Changes to be committed » et « Changed but not updated » (qu’ils soient en vert ou en rouge) ;
+
+	- faire git commit nomfichier1 nomfichier2 pour indiquer lors du commit quels fichiers précis doivent être « commités ».
+
+5. Verifier les logs 
+	- git log
+
+6. Correction erreurs 
+	- git commit --amend : Modifier le dernier message de commit
+	- git reset HEAD^ :  annule le dernier commit et revient à l’avant-dernier
+	- HEAD : dernier commit ;
+	- HEAD^ : avant-dernier commit ;
+	- HEAD^^ : avant-avant-dernier commit ;
+	- HEAD~2 : avant-avant-dernier commit (notation équivalente) ;
+	- d6d98923868578a7f38dea79833b56d0326fcba1 : indique un numéro de commit précis ;
+	- d6d9892 : indique un numéro de commit précis (notation équivalente à la précédente, bien souvent écrire les premiers chiffres est suffisant tant qu’aucun autre commit ne commence par les mêmes chiffres).
+7. Télécharger les nouveautés
+	- git pull
+
+8. Envoyer vos commits
+	- git push
+
+9. Annuler un commit publié
+
+Supposons que vous vouliez annuler le commit 6261cc2 dans cet exemple. Il faut utiliser git revert qui va créer un commit « inverse » :
+
+git revert 6261cc2
+Il faut préciser l’ID du commit à « revert ». Je vous rappelle qu’il n’est pas obligatoire d’indiquer l’ID en entier (qui est un peu long), 
+il suffit de mettre les premiers chiffres tant qu’ils sont uniques (les 4-5 premiers chiffres devraient suffire).

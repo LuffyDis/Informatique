@@ -1,0 +1,19 @@
+1. Character class and shortcuts 
+
+	- \d	[0-9]	numeric character
+	- \D	[^0-9]	NOT a numeric character
+	- \w	[a-zA-Z0-9_]	"word" character
+ 	- \W	[^a-zA-Z0-9_]	NOT a "word" character
+	- \s	[ \f\n\r\t\v]	whitespace character
+	- \S	[^ \f\n\r\t\v]	NOT a whitespace character
+	- .	[^\n]	Any character except line break
+
+2. Quantifiers
+	- ? : o,1
+	- * : 0..n
+	- + : 1..n
+	- {x} : exactly x times 
+	- {x-y} : between x and y times 
+
+3. Grouping 
+	- Demarcated by ()
