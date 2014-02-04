@@ -17,3 +17,7 @@
 
 3. Grouping 
 	- Demarcated by ()
+	
+4. Protect metacharacters 
+	-Pour protéger les caractères spéciaux -> \ 
+	- ex "[" -> \[
