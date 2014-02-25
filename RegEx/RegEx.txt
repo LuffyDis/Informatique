@@ -21,3 +21,7 @@
 4. Protect metacharacters 
 	-Pour protéger les caractères spéciaux -> \ 
 	- ex "[" -> \[
+5. SingleLine MultiLine option
+	- Dans regex .net l'option single line permet de considérer tout le texte comme une seule ligne et donc d'enlever
+	tous les \n\r
+	
