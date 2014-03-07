@@ -18,3 +18,70 @@
 4. Acces : Les triggers ne sont disponibles que dans des styles ou des templates. 
            Meme si tous les controles ont une proprié Triggers , seulement des EventTrigger 
            peuvent y être déclaré . 
+5. Multi Property trigger : Dans les multiProperty trigger on peut metre un ensemble de property conditions 
+                            pour déclenché un ensemble de setteurs : 
+                            
+              <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="true">
+                    <Setter Property="Control.FontStyle" Value="Italic"></Setter>
+                    <Setter Property="Control.Foreground" Value="Red"></Setter>
+                    <Setter Property="Control.Background" Value="Yellow"></Setter>
+                </Trigger>               
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="Control.IsMouseOver" Value="true"></Condition>
+                        <Condition Property="Button.IsPressed" Value="false"></Condition>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Control.FontStyle" Value="Italic"></Setter>
+                    <Setter Property="Control.Foreground" Value="Red"></Setter>
+                    <Setter Property="Control.Background" Value="Yellow"></Setter>
+                </MultiTrigger>
+              </Style.Triggers>
+
+6. Data Trigger :  les data trigger peuvent etre utilisé lorsque une propriétée d'un autre control change de valeur ,
+                   au contraire des property trigger qui sont sur les propriété du control. 
+                   
+                   <Style TargetType="TextBlock">
+                    <Setter Property="Text" Value="No" />
+                    <Setter Property="Foreground" Value="Red" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=cbSample, Path=IsChecked}" Value="True">
+                            <Setter Property="Text" Value="Yes!" />
+                            <Setter Property="Foreground" Value="Green" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                   </Style>
+7. Event trigger : Les event triggers sont souvent utilisé pour déclanché des animations . 
+                   <Style TargetType="TextBlock">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.300" Storyboard.TargetProperty="FontSize" To="28" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.800" Storyboard.TargetProperty="FontSize" To="18" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+8. Multi data trigger : au même titre qu'il existe un multi property trigger , il existe un multi data trigger : 
+              <Style.Triggers>
+                   <MultiDataTrigger>
+                      <MultiDataTrigger.Conditions>
+                          <Condition Binding="{Binding IsCapital}" Value="true"/>
+                          <Condition Binding="{Binding IsLargest}" Value="true"/>
+                      </MultiDataTrigger.Conditions>                    
+                      <Setter Property="Background" Value="Green"/>
+                      <Setter Property="Foreground" Value="White"/>
+                  </MultiDataTrigger>
+              </Style.Triggers>
