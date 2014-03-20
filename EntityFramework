@@ -1,0 +1,18 @@
+********** EntityFramework Code First **************
+
+******** Introduction *************
+EntityFramework Code First et plus particulièrement la classe DbContext permet d'établir un lien entre notre 
+model et notre les tables de notre base de données. 
+
+******** Installation *************
+Pour installer EntityFramework , il suffit de télécharger le package EntityFramework via nuget. 
+La première chose à faire ensuite est de créer un Context de donnée en héritant de la classe DbContext. 
+
+Exemple : 
+
+    public class TrackerDbContext : DbContext 
+    {
+
+    }
+    
+******** DbContext ****************
