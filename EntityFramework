@@ -16,3 +16,13 @@ Exemple :
     }
     
 ******** DbContext ****************
+
+DbContext a éssentiellement 3 roles :
+1 . Etablir un lien entre les tables et le model , ou plutot dire quel entitée fera partir de notre DB via les DbSet<T>. 
+2 . Navigation : établir les relations entre les entitées 
+3 . Datas par défault  
+
+1. DbSet<T>
+    Pour dire quel seront les entitées de notre model qui seront persistés , Dbcontext doit exposé des DbSet<T> via des
+    propriétées. 
+    Exemple : 
