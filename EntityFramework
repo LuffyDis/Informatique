@@ -26,6 +26,22 @@ DbContext a éssentiellement 3 roles :
     Pour dire quel seront les entitées de notre model qui seront persistés , Dbcontext doit exposé des DbSet<T> via des
     propriétées. 
     Exemple : 
+
+3. Datas 
+    Pour créer un jeu de donnée par défault il faut : 
+    3.1 Créer un initializer de données 
+    3.2 Configurer DatabaseInitializer
+    
+    3.1 DatabaseInitializer
+    Une classe DatabaseInitializer doit hériter d'une des classes suivantes : 
+        - CreateDatabaseIfNotExists<CodeCamperDbContext>      // when model is stable
+        - DropCreateDatabaseIfModelChanges<CodeCamperDbContext> // when iterating
+    Elle doit ensuite override la méthode Seed dans laquel on va mettre la logique pour créer les données avec le 
+    context. 
+    
+    3.2 
+     Pour utiliser DatabaseInitializer , il faut le rajouter par la ligne de code suivante : 
+         Database.SetInitializer(new CodeCamperDatabaseInitializer());//Database -> propriétée heritée de DbContext
     
 
 ******** Models ********************
