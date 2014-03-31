@@ -33,6 +33,9 @@ DbContext a éssentiellement 3 roles :
     2. Dans le constructeur de la classe avec Code Fluent definir les relations entre les entitées 
        Voici 2 exemples :
        
+       *** Remarques ***
+       Lorsqu'on définit les relations on doit le faire dans le sens 1 to n (pas besoin de le faire dans le sens n to 1)
+       
        **** Relation n to 1 ****
         // Session has 1 Speaker, Speaker has many Session records
             HasRequired(s => s.Speaker)
