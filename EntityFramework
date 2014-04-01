@@ -21,6 +21,7 @@ DbContext a éssentiellement 3 roles :
 1 . Etablir un lien entre les tables et le model , ou plutot dire quel entitée fera partir de notre DB via les DbSet<T>. 
 2 . Config + Navigation : établir les relations entre les entitées 
 3 . Datas par défault  
+4 . Utilisation 
 
 1. DbSet<T>
     Pour dire quel seront les entitées de notre model qui seront persistés , Dbcontext doit exposé des DbSet<T> via des
@@ -79,6 +80,12 @@ DbContext a éssentiellement 3 roles :
      Pour utiliser DatabaseInitializer , il faut le rajouter par la ligne de code suivante : 
          Database.SetInitializer(new CodeCamperDatabaseInitializer());//Database -> propriétée heritée de DbContext
     
+4. Utilisation
+   Si on veut faire une application console pour construire notre DB : il faut executer le code suivant 
+    Database.SetInitializer(new TrackerDataBaseInitializer());
+    //Initialize db 
+    var context = new TrackerDbContext();
+    context.Database.Initialize(false);
 
 ******** Models ********************
 1. Id : dans un POCO si une propriétée se nomme Id , EntityFramework sera capalble de comprends que c'est la key
