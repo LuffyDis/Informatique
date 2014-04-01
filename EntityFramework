@@ -30,6 +30,13 @@ DbContext a éssentiellement 3 roles :
 
 2. 2.1 Navigation
     Pour definir les relations entre les entitées et que elle se répercurte en base de donnée il faut : 
+    0. Chaque entitée doit contenir une clé etrangère pour la navigation et une propriétée pour l'object référence :
+        ***** exemple *****
+        public int Id { get; set; }
+        public long Number { get; set; }
+        //Table relation 
+        public int TableId { get; set; }
+        public Table Table { get; set; }
     1. Pour chaque entitée créer une classe qui herite de la classe générique : EntityTypeConfiguration<T>
     2. Dans le constructeur de la classe avec Code Fluent definir les relations entre les entitées 
        Voici 2 exemples :
