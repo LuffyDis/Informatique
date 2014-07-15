@@ -89,10 +89,27 @@ DbContext a éssentiellement 3 roles :
     
 4. Utilisation
    Si on veut faire une application console pour construire notre DB : il faut executer le code suivant 
-    Database.SetInitializer(new TrackerDataBaseInitializer());
-    //Initialize db 
-    var context = new TrackerDbContext();
-    context.Database.Initialize(false);
+   using (var context = new UnityContext())
+            {
+                Alarm alarm = new Alarm
+                    {
+                        SubSystemId = 45001,
+                        MessageId = 62,
+                        Date = DateTime.Now,
+                        Parameters = new Collection<Parameter>
+                            {
+                                new Parameter
+                                    {
+                                        Index = 0 ,
+                                        MessageId = 62,
+                                        SubSystemId = 45001,
+                                        Value = "1"
+                                    }
+                            }
+                    };
+                context.Alarms.Add(alarm);
+                context.SaveChanges();
+            }
 
 ******** Models ********************
 1. Id : dans un POCO si une propriétée se nomme Id , EntityFramework sera capalble de comprends que c'est la key
