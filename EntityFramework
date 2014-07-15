@@ -97,3 +97,5 @@ DbContext a éssentiellement 3 roles :
 ******** Models ********************
 1. Id : dans un POCO si une propriétée se nomme Id , EntityFramework sera capalble de comprends que c'est la key
 
+******** Help *********************
+Tous les scénarios de base sont détaillés sur le site de EF : http://msdn.microsoft.com/en-us/data/jj591620.aspx#CompositeKey
