@@ -110,6 +110,13 @@ DbContext a éssentiellement 3 roles :
                 context.Alarms.Add(alarm);
                 context.SaveChanges();
             }
+    ou avec initializer 
+    
+     Database.SetInitializer(new UnityContextInitializer());
+            using (var context = new UnityContext())
+            {
+                context.Database.Initialize(false);
+            }
 
 ******** Models ********************
 1. Id : dans un POCO si une propriétée se nomme Id , EntityFramework sera capalble de comprends que c'est la key
